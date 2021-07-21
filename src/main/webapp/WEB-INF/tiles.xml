@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ 
+<tiles-definitions>
+ 
+	<definition name="mainLayout" template="/WEB-INF/tiles/layout.jsp">
+		
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="home.tiles" extends="mainLayout">
+	<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+	
+	<definition name="transaction.tiles" extends="mainLayout">
+	<put-attribute name="title" value="Transaction Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/transaction.jsp" />
+	</definition>
+	
+	<definition name="sellreportPage.tiles" extends="mainLayout">
+	<put-attribute name="title" value="Sell Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/sellreportPage.jsp" />
+	</definition>
+	
+	<definition name="purchase.tiles" extends="mainLayout">
+	<put-attribute name="title" value="Purchase Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/purchase.jsp" />
+	</definition>
+	
+	<definition name="invoice.tiles" extends="mainLayout">
+	<put-attribute name="title" value="Invoice Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/invoice.jsp" />
+	</definition>
+	
+	<definition name="thankyou.tiles" extends="mainLayout">
+	<put-attribute name="title" value="Thank you Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/thankyou.jsp" />
+	</definition>
+	
+	<definition name="stock.tiles" extends="mainLayout">
+	<put-attribute name="title" value="Stock Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/stock.jsp" />
+	</definition>
+	
+	<definition name="login.tiles" extends="mainLayout">
+	<put-attribute name="title" value="login Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	
+	<definition name="logout.tiles" extends="mainLayout">
+	<put-attribute name="title" value="login Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/logout.jsp" />
+	</definition>
+	
+	<definition name="accessdenied.tiles" extends="mainLayout">
+	<put-attribute name="title" value="login Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/accessdenied.jsp" />
+	</definition>
+	
+	<definition name="error.tiles" extends="mainLayout">
+	<put-attribute name="title" value="login Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/errorpage.jsp" />
+	</definition>
+	
+	<definition name="gstreport.tiles" extends="mainLayout">
+	<put-attribute name="title" value="login Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/gstreport.jsp" />
+	</definition>
+	
+	<definition name="admin.tiles" extends="mainLayout">
+	<put-attribute name="title" value="login Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin.jsp" />
+	</definition>
+ 
+ 
+ 
+ 
+</tiles-definitions>

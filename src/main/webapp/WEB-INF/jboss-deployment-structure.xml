@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<deployment>
+		<exclusions>
+			<module name="com.fasterxml.jackson.core.jackson-core" />
+			<module name="com.fasterxml.jackson.core.jackson-databind" />
+			<module name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" />
+			<module name="org.jboss.resteasy.resteasy-jackson2-provider" />
+			<module name="org.apache.log4j" />
+			<module name="org.apache.commons.logging" />
+			<module name="org.slf4j" />
+			<module name="org.slf4j.impl" />
+			<module name="org.jboss.logging" />
+		</exclusions>
+		<exclude-subsystems>
+			<subsystem name="org.jboss.logging" />
+		</exclude-subsystems>
+	</deployment>
+
+</jboss-deployment-structure>  
